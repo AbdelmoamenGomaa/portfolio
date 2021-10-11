@@ -1,0 +1,102 @@
+/* main style 2021 */
+/* root for my globals */
+:root {
+    --main-color: #f39c12;
+}
+
+/* html and body general style */
+html,
+body {
+    scroll-behavior: smooth;
+}
+/* style of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ece6e6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(243, 157, 18, 0.815);
+}
+/* header style */
+header {
+    height: 800px;
+    background-image: url(../img/alvaro-reyes-fSWOVc3e06w-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    position: relative;
+    z-index: -1;
+}
+/* overlay style above header */
+.overlay {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #30E8BF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #908b87, #acb1b0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #615c5a, #525353);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: 1;
+    opacity: 0.95;
+}
+/* make a vertical line style */
+.header-line {
+    position: absolute;
+    bottom: 0;
+    width: 2px;
+    height: 12rem;
+    background-color: var(--main-color);
+}
+/* style of the image in about section*/
+.about-me div img {
+    opacity: 0.7;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.about-me div .overlay-2 {
+    background-color: rgba(187, 176, 158, 0.8);
+    visibility: hidden;
+
+}
+
+.about-me div:hover .overlay-2 {
+    visibility: visible;
+    padding: 1em 0 1em 0;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transition: all ease 2s;
+    -webkit-transition: all ease 2s;
+    -moz-transition: all ease 2s;
+    -ms-transition: all ease 2s;
+    -o-transition: all ease 2s;
+}
+
+.bg-teal {
+    background-color: teal !important
+}
+
+.social {
+    border-left: 1px solid var(--main-color);
+    padding-left: 1rem
+}
+
+/* end of my custom styles */
